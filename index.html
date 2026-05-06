@@ -1,12 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reiseguide</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+            <img src="bilder/logo.png" alt="">
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="steder.html">Reisemål</a></li>
+                <li><a href="tips.html">Tips</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="main">
+            <h2>Velkommen til min</h2>
+            <h1>Reiseguide</h1>
+            <h3>Utforsk spennende steder rundt i verden!</h3>
+        </section>
+
+        <section class="skroll">
+        <h2>Reisemål</h2>
+
+        <div class="scrollContainer">
+            <div class="slide"><img src="bilder/alps.jpg"></div>
+            <div class="slide"><img src="bilder/asia.jpg"></div>
+            <div class="slide"><img src="bilder/pariis.jpg"></div>
+            <div class="slide"><img src="bilder/ny.jpg"></div>
+            <div class="slide"><img src="bilder/londoon.jpg"></div>
+            <div class="slide"><img src="bilder/finland.jpg"></div>
+            <div class="slide"><img src="bilder/greece.jpg"></div>
+            <div class="slide"><img src="bilder/la.jpg"></div>
+
+            <div class="slide"><img src="bilder/alps.jpg"></div>
+            <div class="slide"><img src="bilder/asia.jpg"></div>
+            <div class="slide"><img src="bilder/pariis.jpg"></div>
+            <div class="slide"><img src="bilder/ny.jpg"></div>
+            <div class="slide"><img src="bilder/londoon.jpg"></div>
+            <div class="slide"><img src="bilder/finland.jpg"></div>
+            <div class="slide"><img src="bilder/greece.jpg"></div>
+            <div class="slide"><img src="bilder/la.jpg"></div>
+        </div>
+
+    </section>
+
+        
+        <section class="preview">
+            <h2>Populære severdigheter</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <img src="bilder/colosseum.jpg" alt="">
+                    <h3>Colusseum i Italia</h3>
+                </div>
+
+                <div class="card">
+                    <img src="bilder/machupicchu.jpg" alt="">
+                    <h3>Machu Picchu i Peru</h3>
+                </div>
+
+                <div class="card">
+                    <img src="bilder/pyramid.jpg" alt="">
+                    <h3>Pyramidene i Egypt</h3>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="info">
+            <div class="info-content">
+                <h2>Oppdag verden</h2>
+                <p>
+                    Reiseguiden gir deg inspirasjon, tips og anbefalinger til spennende destinasjoner
+                    over hele verden. Enten du drømmer om storbyferie, strandliv eller eventyr i naturen,
+                    finner du noe her.
+                </p>
+
+                <a href="steder.html" class="info-btn">Start reisen →</a>
+            </div>
+        </section>
+
+        <section class="inspo">
+            <h2>Reiseinspo</h2>
+
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="bilder/bilde2.jpg" alt="">
+                </div>
+
+                <div class="grid-item large">
+                    <img src="bilder/bakgrunn.jpg" alt="">
+                </div>
+
+                <div class="grid-item">
+                    <img src="bilder/bilde3.jpg" alt="">
+                </div>
+
+                <div class="grid-item">
+                    <img src="bilder/bilde4.jpg" alt="">
+                </div>
+
+                <div class="grid-item">
+                    <img src="bilder/bilde5.jpg" alt="">
+                </div>
+
+                <div class="grid-item">
+                    <img src="bilder/bilde6.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="tips">
+            <div class="tips-content">
+                <h2>Gjør reisen enklere</h2>
+                <p>
+                    Få nyttige råd og smarte tips som gjør turen din bedre – fra pakking til planlegging.
+                </p>
+
+                <a href="tips.html" class="tips-btn">Se alle reisetips →</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
+
+<script>
+
+    const slides = document.querySelector(".scrollContainer");
+    let v = 0;
+    const totalWidth = slides.scrollWidth / 2;
+
+        function scroll() {
+            v++;
+            if (v >= totalWidth) {
+                v = 0;
+            }
+            slides.style.left = "-" + v + "px";
+        }
+
+        setInterval(scroll, 16);
+
+</script>
+
 </html>
