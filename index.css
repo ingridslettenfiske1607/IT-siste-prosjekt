@@ -12,9 +12,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(bilder/bakgrunn.jpg);
+    background-image: url(bilder/index/bakgrunn.jpg);
     background-size: cover;
     background-position: center;
+}
+
+.main h2, .main h3 {
+    text-shadow:  2px 2px 4px var(--background);
 }
 
 h1 {
@@ -205,3 +209,4 @@ a {
     grid-column: 2/4;
     grid-row: 1/3;
 }
+

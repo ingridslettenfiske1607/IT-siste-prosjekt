@@ -7,7 +7,7 @@
 
 .hero {
     height: 100vh;
-    background-image: url(bilder/reisemål.jpg);
+    background-image: url(bilder/reisemål/reisemål.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,23 +116,255 @@ a {
 
 .grid-item img {
     border-radius: 10px;
-    height: 400px;
+    height: 300px;
     object-fit: cover;
 }
 
 .storby {
-    background-color: #2A9D8F;
-    
+    background: linear-gradient(to bottom, var(--background), var(--primary));
+    padding: 100px 0 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.max-storby {
+    max-width: 886px;
+    margin: auto;
 }
 
 .storby-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 300px);
+    margin-top: 50px;
 }
 
-.max-width {
-    max-width: 900px;
-    margin: 0 auto;
+.storby h2 {
+    padding-bottom: 10px;
+    border-bottom: #264653 solid 2px;
+    width: 100%;
+
+}
+
+.max-storby>p {
+    border-left: 4px solid var(--accent);
+    padding-left: 1rem;
+    text-align: left;
+    margin-top: 50px;
+}
+
+
+.storby-item {
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.4s ease;
+}
+
+.storby-item:hover {
+    transform: scale(1.03);
+}
+
+.item-text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: absolute;
+    z-index: 2;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+}
+
+.storby-item h3,
+.storby-item p {
+    color: white;
+    margin: 0;
+    text-shadow: 2px 2px 4px black;
+    text-align: left;
+}
+
+.storby-item h3 {
+    bottom: 40px;
+}
+
+.storby-item p {
+    bottom: 10px;
+    font-size: 0.85rem;
+}
+
+
+.storby-item img {
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.paris {
+    grid-row: 1 / 2;
+    grid-column: 1 /2;
+}
+
+.tokyo {
+    grid-column: 2 / 4;
+    grid-row: 1/ 2;
+}
+
+.newyork {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+.london {
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+}
+
+.dubai {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.barcelona {
+    grid-template-rows: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+
+
+.natur {
+    background-color: var(--primary);
+
+    padding: 100px 0 100px 0;
+}
+
+.max-natur {
+    max-width: 1110px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.natur h2 {
+    color: white;
+    border-bottom: var(--secondary) solid 2px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.max-natur > p {
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: left;
+    border-left: 4px solid var(--accent);
+    padding-left: 1rem;
+}
+
+.natur-inner>p {
+    color: rgba(255, 255, 255, 0.8);
+    border-left: 4px solid var(--accent);
+    padding-left: 1rem;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.natur-scroll {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary) transparent;
+}
+
+.natur-scroll::-webkit-scrollbar {
+    height: 5px;
+}
+
+.natur-scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.natur-scroll::-webkit-scrollbar-thumb {
+    background-color: var(--secondary);
+    border-radius: 10px;
+}
+
+.natur-kort {
+    min-width: 280px;
+    max-width: 280px;
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    overflow: hidden;
+    scroll-snap-align: start;
+    transition: transform 0.4s ease, background-color 0.4s ease;
+    flex-shrink: 0;
+}
+
+.natur-kort:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.natur-img-wrap {
+    position: relative;
+    overflow: hidden;
+    height: 220px;
+}
+
+.natur-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.natur-kort:hover .natur-img-wrap img {
+    transform: scale(1.06);
+}
+
+.natur-tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: var(--accent);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.natur-info {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.natur-info h3 {
+    color: white;
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.natur-info p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.88rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.strand,
+.storby,
+.natur {
+    scroll-margin-top: 80px;
 }

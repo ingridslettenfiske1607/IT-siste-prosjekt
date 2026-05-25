@@ -14,6 +14,7 @@
     <header>
         <nav>
             <img src="bilder/logo.png" alt="">
+
             <ul>
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="steder.html">Reisemål</a></li>
@@ -31,47 +32,47 @@
         </section>
 
         <section class="skroll">
-        <h2>Reisemål</h2>
+            <h2>Reisemål</h2>
 
-        <div class="scrollContainer">
-            <div class="slide"><img src="bilder/alps.jpg"></div>
-            <div class="slide"><img src="bilder/asia.jpg"></div>
-            <div class="slide"><img src="bilder/pariis.jpg"></div>
-            <div class="slide"><img src="bilder/ny.jpg"></div>
-            <div class="slide"><img src="bilder/londoon.jpg"></div>
-            <div class="slide"><img src="bilder/finland.jpg"></div>
-            <div class="slide"><img src="bilder/greece.jpg"></div>
-            <div class="slide"><img src="bilder/la.jpg"></div>
+            <div class="scrollContainer">
+                <div class="slide"><img src="bilder/index/alps.jpg"></div>
+                <div class="slide"><img src="bilder/index/asia.jpg"></div>
+                <div class="slide"><img src="bilder/index/pariis.jpg"></div>
+                <div class="slide"><img src="bilder/index/ny.jpg"></div>
+                <div class="slide"><img src="bilder/index/londoon.jpg"></div>
+                <div class="slide"><img src="bilder/index/finland.jpg"></div>
+                <div class="slide"><img src="bilder/index/greece.jpg"></div>
+                <div class="slide"><img src="bilder/index/la.jpg"></div>
 
-            <div class="slide"><img src="bilder/alps.jpg"></div>
-            <div class="slide"><img src="bilder/asia.jpg"></div>
-            <div class="slide"><img src="bilder/pariis.jpg"></div>
-            <div class="slide"><img src="bilder/ny.jpg"></div>
-            <div class="slide"><img src="bilder/londoon.jpg"></div>
-            <div class="slide"><img src="bilder/finland.jpg"></div>
-            <div class="slide"><img src="bilder/greece.jpg"></div>
-            <div class="slide"><img src="bilder/la.jpg"></div>
-        </div>
+                <div class="slide"><img src="bilder/index/alps.jpg"></div>
+                <div class="slide"><img src="bilder/index/asia.jpg"></div>
+                <div class="slide"><img src="bilder/index/pariis.jpg"></div>
+                <div class="slide"><img src="bilder/index/ny.jpg"></div>
+                <div class="slide"><img src="bilder/index/londoon.jpg"></div>
+                <div class="slide"><img src="bilder/index/finland.jpg"></div>
+                <div class="slide"><img src="bilder/index/greece.jpg"></div>
+                <div class="slide"><img src="bilder/index/la.jpg"></div>
+            </div>
 
-    </section>
+        </section>
 
-        
+
         <section class="preview">
             <h2>Populære severdigheter</h2>
 
             <div class="cards">
                 <div class="card">
-                    <img src="bilder/colosseum.jpg" alt="">
+                    <img src="bilder/index/colosseum.jpg" alt="">
                     <h3>Colusseum i Italia</h3>
                 </div>
 
                 <div class="card">
-                    <img src="bilder/machupicchu.jpg" alt="">
+                    <img src="bilder/index/machupicchu.jpg" alt="">
                     <h3>Machu Picchu i Peru</h3>
                 </div>
 
                 <div class="card">
-                    <img src="bilder/pyramid.jpg" alt="">
+                    <img src="bilder/index/pyramid.jpg" alt="">
                     <h3>Pyramidene i Egypt</h3>
                 </div>
             </div>
@@ -96,27 +97,27 @@
 
             <div class="grid">
                 <div class="grid-item">
-                    <img src="bilder/bilde2.jpg" alt="">
+                    <img src="bilder/index/bilde2.jpg" alt="">
                 </div>
 
                 <div class="grid-item large">
-                    <img src="bilder/bakgrunn.jpg" alt="">
+                    <img src="bilder/index/bakgrunn.jpg" alt="">
                 </div>
 
                 <div class="grid-item">
-                    <img src="bilder/bilde3.jpg" alt="">
+                    <img src="bilder/index/bilde3.jpg" alt="">
                 </div>
 
                 <div class="grid-item">
-                    <img src="bilder/bilde4.jpg" alt="">
+                    <img src="bilder/index/bilde4.jpg" alt="">
                 </div>
 
                 <div class="grid-item">
-                    <img src="bilder/bilde5.jpg" alt="">
+                    <img src="bilder/index/bilde5.jpg" alt="">
                 </div>
 
                 <div class="grid-item">
-                    <img src="bilder/bilde6.jpg" alt="">
+                    <img src="bilder/index/bilde6.jpg" alt="">
                 </div>
             </div>
         </section>
@@ -144,15 +145,18 @@
     let v = 0;
     const totalWidth = slides.scrollWidth / 2;
 
-        function scroll() {
-            v++;
-            if (v >= totalWidth) {
-                v = 0;
-            }
-            slides.style.left = "-" + v + "px";
+    function scroll() {
+        v++;
+        if (v >= totalWidth) {
+            v = 0;
         }
+        slides.style.left = "-" + v + "px";
+    }
 
-        setInterval(scroll, 16);
+    setInterval(scroll, 16);
+
+
+    
 
 </script>
 
