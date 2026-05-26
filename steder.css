@@ -305,7 +305,6 @@ a {
     overflow: hidden;
     scroll-snap-align: start;
     transition: transform 0.4s ease, background-color 0.4s ease;
-    flex-shrink: 0;
 }
 
 .natur-kort:hover {
