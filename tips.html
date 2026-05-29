@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>reisetips</title>
     <link rel="stylesheet" href="tips.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -20,20 +21,180 @@
                 <li><a href="tips.html">Tips</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
+            <i class="fa-solid fa-bars"></i>
         </nav>
     </header>
 
     <main>
 
-        <section>
-            <h1>Reisemål</h1>
+        <section class="hero_2">
+            <h1>Reisetips</h1>
+            <h3>Små tips som gjør reisen enklere og bedre.</h3>
         </section>
+
+        <section class="viktig">
+
+            <h2>Viktige tips før reisen</h2>
+
+            <div class="cards_2">
+                <div class="card_2">
+                    <i class="fa-solid fa-ticket"></i>
+                    <h3>Dokumenter og biletter</h3>
+                    <p>Før du reiser er det viktig å ha kontroll på pass, billetter og andre nødvendige dokumenter.
+                        Sjekk
+                        at passet er gyldig, og oppbevar viktige papirer både digitalt og fysisk for ekstra sikkerhet.
+                    </p>
+                </div>
+                <div class="card_2">
+                    <i class="fa-solid fa-suitcase-rolling"></i>
+                    <h3>Pakk smart</h3>
+                    <p>Pakk kun det du trenger, og planlegg klær etter vær og aktiviteter. En ryddig koffert gjør reisen
+                        enklere og gir mer plass til ting du eventuelt kjøper på turen.</p>
+                </div>
+                <div class="card_2">
+                    <i class="fa-solid fa-wallet"></i>
+                    <h3>Planlegg budsjettet</h3>
+                    <p>Det kan være lurt å sette opp et enkelt budsjett før reisen. Da får du bedre oversikt over
+                        utgifter til
+                        mat, transport, aktiviteter og shopping underveis.</p>
+                </div>
+                <div class="card_2">
+                    <i class="fa-solid fa-cloud-sun"></i>
+                    <h3>Sjekk vær og klima</h3>
+                    <p>Undersøk værmeldingen før avreise slik at du er forberedt på temperatur, regn eller andre
+                        forhold.
+                        Dette gjør det lettere å pakke riktig og planlegge aktiviteter.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="click-tips">
+
+            <h2>Klikk for tips</h2>
+
+            <div class="tips-buttons">
+                <button onclick="showTip('pakking')">🎒 Pakking</button>
+                <button onclick="showTip('fly')">✈️ Flyreise</button>
+                <button onclick="showTip('hotell')">🏨 Hotell</button>
+                <button onclick="showTip('sikkerhet')">🩺 Sikkerhet</button>
+            </div>
+
+            <div class="tip-box">
+                <p id="tip-text">
+                    Klikk på en kategori for å vise et tips.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="quote-section">
+            <h2>
+                “Travel is the only thing you buy that makes you richer.”
+            </h2>
+
+
+        </section>
+
+        <section class="travel-types">
+
+            <h2>Tips etter type reise</h2>
+
+            <div class="travel-grid">
+
+                <div class="travel-card">
+                    <img src="bilder/index/by.jpg" alt="">
+                    <h3>🌆 Storby</h3>
+                    <p>
+                        Bruk komfortable sko og planlegg hvilke områder du vil utforske.
+                    </p>
+
+                    <div class="extra-text">
+                        Storbyreiser gir deg muligheten til å oppleve kultur, shopping, mat og kjente severdigheter på
+                        ett sted.
+                    </div>
+
+                    <button class="card-btn" onclick="toggleText(this)">
+                        Les mer →
+                    </button>
+
+                    
+                    
+                </div>
+
+                <div class="travel-card">
+                    <img src="bilder/index/strand.jpg" alt="">
+                    <h3>🏝 Strand</h3>
+                    <p>
+                        Husk solkrem, lette klær og nok vann for lange dager i solen.
+                    </p>
+
+                    <div class="extra-text">
+                        Storbyreiser gir deg muligheten til å oppleve kultur, shopping, mat og kjente severdigheter på
+                        ett sted.
+                    </div>
+
+                    <button class="card-btn" onclick="toggleText(this)">
+                        Les mer →
+                    </button>
+
+                    
+                </div>
+
+                <div class="travel-card">
+                    <img src="bilder/reisemål/natur.jpg" alt="">
+                    <h3>🏔 Natur</h3>
+                    <p>
+                        Sjekk værforhold og ta med riktig utstyr før du legger ut på tur.
+                    </p>
+
+                    <div class="extra-text">
+                        <p>Storbyreiser gir deg muligheten til å oppleve kultur, shopping, mat og kjente severdigheter på
+                        ett sted. </p>
+                    </div>
+
+                    <button class="card-btn" onclick="toggleText(this)">
+                        Les mer →
+                    </button>
+
+                    
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="cta">
+
+
+            <h2>Klar for ditt neste eventyr?</h2>
+
+            <p>
+                Utforsk flere smarte reisetips og gjør reisen enklere, tryggere og mer spennende.
+            </p>
+
+            <a href="tips.html" class="cta-btn">
+                Se reisetips →
+            </a>
+
+
+
+        </section>
+
+
     </main>
 
     <footer>
 
     </footer>
 
+
+
 </body>
+
+<script src="script.js">
+
+   
+</script>
 
 </html>

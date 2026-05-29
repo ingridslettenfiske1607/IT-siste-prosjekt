@@ -7,7 +7,8 @@
     <title>Reiseguide</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="index.js">
 </head>
 
 <body>
@@ -21,8 +22,11 @@
                 <li><a href="tips.html">Tips</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
+            <i class="fa-solid fa-bars"></i>
         </nav>
     </header>
+
+
 
     <main>
         <section class="main">
@@ -31,30 +35,7 @@
             <h3>Utforsk spennende steder rundt i verden!</h3>
         </section>
 
-        <section class="skroll">
-            <h2>Reisemål</h2>
-
-            <div class="scrollContainer">
-                <div class="slide"><img src="bilder/index/alps.jpg"></div>
-                <div class="slide"><img src="bilder/index/asia.jpg"></div>
-                <div class="slide"><img src="bilder/index/pariis.jpg"></div>
-                <div class="slide"><img src="bilder/index/ny.jpg"></div>
-                <div class="slide"><img src="bilder/index/londoon.jpg"></div>
-                <div class="slide"><img src="bilder/index/finland.jpg"></div>
-                <div class="slide"><img src="bilder/index/greece.jpg"></div>
-                <div class="slide"><img src="bilder/index/la.jpg"></div>
-
-                <div class="slide"><img src="bilder/index/alps.jpg"></div>
-                <div class="slide"><img src="bilder/index/asia.jpg"></div>
-                <div class="slide"><img src="bilder/index/pariis.jpg"></div>
-                <div class="slide"><img src="bilder/index/ny.jpg"></div>
-                <div class="slide"><img src="bilder/index/londoon.jpg"></div>
-                <div class="slide"><img src="bilder/index/finland.jpg"></div>
-                <div class="slide"><img src="bilder/index/greece.jpg"></div>
-                <div class="slide"><img src="bilder/index/la.jpg"></div>
-            </div>
-
-        </section>
+        
 
 
         <section class="preview">
@@ -91,6 +72,8 @@
                 <a href="steder.html" class="info-btn">Start reisen →</a>
             </div>
         </section>
+
+
 
         <section class="inspo">
             <h2>Reiseinspo</h2>
@@ -139,24 +122,14 @@
     </footer>
 </body>
 
-<script>
 
-    const slides = document.querySelector(".scrollContainer");
-    let v = 0;
-    const totalWidth = slides.scrollWidth / 2;
 
-    function scroll() {
-        v++;
-        if (v >= totalWidth) {
-            v = 0;
-        }
-        slides.style.left = "-" + v + "px";
-    }
-
-    setInterval(scroll, 16);
-
+<script src="script.js">
 
     
+
+   
+
 
 </script>
 
